@@ -1,0 +1,10 @@
+Pipeline,Accuracy (%),BestParams
+LDA → 1-NN,70.1863354037267,{'knn__n_neighbors': 3}
+PCA → LDA → 1-NN,84.78260869565217,"{'knn__n_neighbors': 5, 'pca__n_components': 120}"
+LDA → SVM (RBF),66.14906832298136,"{'svm__C': 1000.0, 'svm__gamma': 0.005}"
+PCA → LDA → SVM,82.29813664596274,"{'pca__n_components': 150, 'svm__C': 5000.0, 'svm__gamma': 0.001}"
+PCA → SVM (RBF),86.0248447204969,"{'pca__n_components': 120, 'svm__C': 1000.0, 'svm__gamma': 0.005}"
+PCA → 1-NN,69.56521739130434,"{'knn__n_neighbors': 5, 'pca__n_components': 50}"
+Kernel PCA → SVM,88.19875776397515,"{'kpca__gamma': 0.0005, 'kpca__n_components': 350, 'svm__C': 10000.0, 'svm__gamma': 0.005}"
+Kernel PCA → LDA → SVM,81.36645962732919,"{'kpca__gamma': 0.001, 'kpca__n_components': 250, 'svm__C': 1000.0, 'svm__gamma': 0.001}"
+Kernel PCA → LDA → 1-NN,82.6086956521739,"{'knn__n_neighbors': 5, 'kpca__gamma': 0.0005, 'kpca__n_components': 250}"
